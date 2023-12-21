@@ -1,10 +1,9 @@
 "use client";
 
+import { chains, config } from "@/wagmi";
 import { RainbowKitProvider } from "@rainbow-me/rainbowkit";
 import * as React from "react";
 import { WagmiConfig } from "wagmi";
-
-import { chains, config } from "../wagmi";
 
 export function Providers({ children }: { children: React.ReactNode }) {
   const [mounted, setMounted] = React.useState(false);
